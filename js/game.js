@@ -1,6 +1,5 @@
 /*global Phaser */
 
-
 // Copyright (c) 2023 william simard All rights reserved
 //
 // Created by: william simard
@@ -10,4 +9,4 @@
 // scene import statments
 
 import tilescreen from "./js/tilescreen.js";
-import splashscreen from "./js/splashscreen.js";  
+import splashscreen from "./js/splashscreen.js";
