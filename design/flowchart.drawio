@@ -4,8 +4,6 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="35" value="stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
-                    <mxGeometry x="-100" y="390" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="36" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="37" target="39">
                     <mxGeometry relative="1" as="geometry"/>
@@ -87,6 +85,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
+               
                 <mxCell id="61" value="the game will end&amp;nbsp;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=0;arcSize=12;size=0.23;" vertex="1" parent="1">
                     <mxGeometry x="260" y="385" width="100" height="60" as="geometry"/>
                 </mxCell>
