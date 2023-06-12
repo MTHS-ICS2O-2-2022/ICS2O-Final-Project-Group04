@@ -8,5 +8,6 @@
 
 // scene import statments
 
-import tilescreen from "./js/tilescreen.js";
-import splashscreen from "./js/splashscreen.js";
+import game from "./js/game.js";
+import tilesceen from "./js/tilesceen.js";
+import splashsceen from "./js/splashsceen.js";
