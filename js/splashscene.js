@@ -7,7 +7,7 @@
 // this is the splash scene
 
 /**
- * this class is the plash scene
+ * this class is the splash scene
  */
 class splashscene extends phaser.scene {
   /**
