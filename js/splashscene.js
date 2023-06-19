@@ -42,3 +42,4 @@ class SplashScene extends Phaser.Scene {
 
 // Export the Splash Scene for use in other files
 export default SplashScene;
+
