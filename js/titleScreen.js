@@ -37,4 +37,4 @@ clickButton () {
 }
 }
 
-export default titleScreen
+export default titleScreen   
