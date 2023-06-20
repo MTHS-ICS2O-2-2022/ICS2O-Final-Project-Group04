@@ -7,52 +7,39 @@
 // this is the splash scene
 
 /**
- * this class is the plash scene
+ * this class is the splash scene
  */
 class splashscene extends phaser.scene {
   /**
-   * this method is the constructor
-   */
+// Splash Scene
+
+class SplashScene extends Phaser.Scene {
   constructor() {
-    super({ key: "splashScene" });
+    super({ key: "SplashScene" });
   }
 
-  /**
-   * can be defined on your scenes.
-   * this method is called by the scene manager when the scene starts.
-   *   before preload() and create()
-   * @param {object} data - any data passed via sceneplugin.add() or sceneplugin.start().
-   */
-  init(data) {
-    this.cameras.main.setBackgroundColor("#ffffff");
-  }
-
-  /**
-   * can be defined in your own scenes.
-   * use it to load assets.
-   */
   preload() {
-    console.log("splash : scene");
+    // Load any necessary assets here (e.g., images, sounds)
+    this.load.image("logo", "assets/logo.png");
   }
 
-  /**
-   * can be defined in your own scenes.
-   * use to create your game objective
-   * @param {object} data - any data passed via sceneplugin.add() or sceneplugin.start().
-   */
-  create(data) {
-    // pass
+  create() {
+    // Display the splash screen and logo
+    this.add.image(400, 300, "logo");
+
+    // Add any additional text or UI elements
+    this.add.text(400, 500, "Click to Start", { fontSize: "24px", fill: "#ffffff" }).setOrigin(0.5);
+
+    // Set up an event listener for the start button
+    this.input.on("pointerdown", this.startGame, this);
   }
 
-  /**
-   * should be overridden in your own scenes.
-   * this method is called once per game step while the scene is running.
-   * @param {number} time - the current time..
-   * @param {number} delta - the delta time in ms since the lase frame
-   */
-  update(time, delta) {
-    // pass
+  startGame() {
+    // Transition to the game scene
+    this.scene.start("GameScene");
   }
 }
 
-export default splashscene;
+// Export the Splash Scene for use in other files
+export default SplashScene;
+
