@@ -26,7 +26,7 @@ placeMines(board, NUMBER_OF_MINES);
 printBoard(board);
 
 // Function to create the game board
-function createBoard(size) {
+function tilepoint(size) {
   let board = [];
   for (let i = 0; i < size; i++) {
     board[i] = [];
@@ -51,25 +51,6 @@ function placeMines(board, numberOfMines) {
       board[row][col].hasMine = true;
       count++;
     }
-  }
-}
-
-// Function to print the board
-function printBoard(board) {
-  for (let i = 0; i < BOARD_SIZE; i++) {
-    let row = "";
-    for (let j = 0; j < BOARD_SIZE; j++) {
-      if (board[i][j].revealed) {
-        if (board[i][j].hasMine) {
-          row += "* ";
-        } else {
-          row += board[i][j].neighborMines + " ";
-        }
-      } else {
-        row += "_ ";
-      }
-    }
-    console.log(row);
   }
 }
 

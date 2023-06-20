@@ -5,6 +5,8 @@
 // Created by: william simard
 // Created on: may 2023
 // this is the splash scene
+// Export the Splash Scene for use in other files
+
 
 /**
  * this class is the splash scene
