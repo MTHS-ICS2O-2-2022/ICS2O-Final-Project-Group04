@@ -11,10 +11,7 @@
 /**
  * this class is the splash scene
  */
-class splashscene extends phaser.scene {
-  /**
 // Splash Scene
-
 class SplashScene extends Phaser.Scene {
   constructor() {
     super({ key: "SplashScene" });
