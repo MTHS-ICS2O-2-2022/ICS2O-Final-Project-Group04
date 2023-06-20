@@ -17,14 +17,15 @@ const titlescene = new titleScene();
 /**
  * start phaser game
  */
-const config = {
+
+   const config = {
   type: Phaser.AUTO,
   width: 1920,
-  height: 1080,
-  physics: {
+ height: 1080,
+physics: {
     default: "arcade",
     arcade: {
-      debug: true,
+      ebug: true,
     },
   },
   //set background colour
